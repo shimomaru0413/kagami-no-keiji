@@ -1,4 +1,4 @@
-const CACHE = "kagami-no-keiji-v0.1.1";
+const CACHE = "kagami-no-keiji-v0.1.2";
 const ASSETS = [
   "./",
   "./index.html",

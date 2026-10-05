@@ -41,6 +41,12 @@
     frontTitle.textContent = card.title;
     messageTitle.textContent = card.title;
     messageText.textContent = card.message;
+    messageText.classList.remove("message-long", "message-very-long");
+    if (card.message.length >= 175) {
+      messageText.classList.add("message-very-long");
+    } else if (card.message.length >= 135) {
+      messageText.classList.add("message-long");
+    }
     const sigilSrc = `assets/sigils/${card.sigil}.svg`;
     frontSigil.src = sigilSrc;
     messageSigil.src = sigilSrc;
